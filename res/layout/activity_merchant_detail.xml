@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_comm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp" >
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_white_with_frame"
+            android:drawablePadding="8dp"
+            android:hint="名称"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_white_with_frame"
+            android:drawablePadding="8dp"
+            android:hint="位置"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_grant_quota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_white_with_frame"
+            android:drawablePadding="8dp"
+            android:hint="优惠额度"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_white_with_frame"
+            android:drawablePadding="8dp"
+            android:hint="管理员"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_mobile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_white_with_frame"
+            android:drawablePadding="8dp"
+            android:hint="电话"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_buy_quota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_white_with_frame"
+            android:drawablePadding="8dp"
+            android:hint="可购买的额度限额"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCCCC"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="邀请码" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="联系" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="锁定" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_current_month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本月优惠发放总量" />
+
+        <TextView
+            android:id="@+id/tv_buy_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="超额购买余量" />
+
+        <TextView
+            android:id="@+id/tv_grant_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本月额度余量" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CCCCCCCC"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="优惠发放情况" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="月份" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="额度内" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="额度外" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="总量" />
+    </LinearLayout>
+    
+    <ListView 
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        />
+    
+</LinearLayout>

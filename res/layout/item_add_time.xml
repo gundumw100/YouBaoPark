@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/item_0"
+        style="@style/edit_text_charges"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="----" />
+
+    <EditText
+        android:id="@+id/item_1"
+        style="@style/edit_text_charges"
+        android:text="" 
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小时,单价" />
+
+    <EditText
+        android:id="@+id/item_2"
+        style="@style/edit_text_charges"
+        android:text="" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元/" />
+
+    <EditText
+        android:id="@+id/item_3"
+        style="@style/edit_text_charges"
+        android:text="60" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分钟" />
+
+</LinearLayout>

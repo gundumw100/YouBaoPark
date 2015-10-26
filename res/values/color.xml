@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="primary">#FF33ade2</color>
+    <color name="secondary">#FFEFAC2A</color>
+    <color name="base_gray">#FF949494</color>
+    
+    <!-- main menu color -->
+    <color name="main_menu_0">#FFFB6D59</color>
+    <color name="main_menu_1">#FF79AA37</color>
+    <color name="main_menu_2">#FF3CC1A4</color>
+    <color name="main_menu_3">#FF1893FD</color>
+    <color name="main_menu_4">#FF666666</color>
+    <color name="main_menu_5">#FFF1A847</color>
+    
+
+</resources>

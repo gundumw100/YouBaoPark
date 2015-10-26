@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.yirui.park.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF070809"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_comm" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="2"
+            android:orientation="horizontal" >
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_0"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_0"
+                app:highlightColor="@android:color/holo_orange_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_chazhao"
+                app:radius="10"
+                app:text="预定管理" />
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_1"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_1"
+                app:highlightColor="@android:color/holo_blue_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_tingche"
+                app:radius="10"
+                app:text="商户管理" />
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_2"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_2"
+                app:highlightColor="@android:color/holo_blue_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_fufei"
+                app:radius="10"
+                app:text="车位情况" />
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_3"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_3"
+                app:highlightColor="@android:color/holo_blue_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_jilu"
+                app:radius="10"
+                app:text="停车记录" />
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_4"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_4"
+                app:highlightColor="@android:color/holo_blue_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_jilu"
+                app:radius="10"
+                app:text="监控视频" />
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_5"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_5"
+                app:highlightColor="@android:color/holo_blue_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_fufei"
+                app:radius="10"
+                app:text="评论响应" />
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_6"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_4"
+                app:highlightColor="@android:color/holo_blue_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_jilu"
+                app:radius="10"
+                app:text="反向寻车" />
+
+            <com.widget.view.RoundButton
+                android:id="@+id/btn_7"
+                android:layout_width="@dimen/main_menu_size"
+                android:layout_height="@dimen/main_menu_size"
+                android:layout_margin="8dp"
+                app:bgcolor="@color/main_menu_5"
+                app:highlightColor="@android:color/holo_blue_dark"
+                app:highlightMode="image"
+                app:image="@drawable/icon_fufei"
+                app:radius="10"
+                app:text="收费情况" />
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>
